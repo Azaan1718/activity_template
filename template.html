@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="templatecss.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="page">
+    
+         <aside class="sidebar">
+            <div class="heading">
+             <div id="tinkerlog" style="font-weight: bolder;"><i class="fa-solid fa-wrench"></i>  Tinker Log</div>
+             <div id="marker">Markerspace HQ</div>
+            </div>
+            <div class="dashboard">
+
+            <p><i class="fa-solid fa-calendar"></i> Dashboard</p>
+            <button id="sidebutton1"><i class="fa-solid fa-hammer"></i>Activity Log</button>
+            <button id="sidebutton2"><i class="fa-solid fa-wand-magic-sparkles"></i>AI Idea Lab</button>
+            <button id="newactivity">+ New Activity</button>
+
+            </div>
+            
+         </aside>
+
+         <div class="main">
+            <div id="welcome">WELCOME BACK INCHARGE</div>
+           <div id="tinker">What did we tinker today?</div> 
+         
+         
+         <div class="logactivities">
+            <div style="font-weight: lighter;color: rgb(156, 158, 159);">Log activities,save photos and notes and let AI spark fresh ideas for your next session</div>
+            
+                <button id="button1logactivities"><i class="fa-solid fa-hammer"></i>Log Activity</button>
+                <button id="button2logactivities"><i class="fa-solid fa-wand-magic-sparkles"></i>AI Ideas</button>
+    
+        </div>
+        <div class="boxes">
+        <div id="totalactivities"><i class="fa-solid fa-hammer"></i><h1>0</h1>Total Activities</div>
+        <div id="thisweek"><i class="fa-solid fa-calendar"></i><h1>0</h1>This Week</div>
+        <div id="thismonth"><i class="fa-solid fa-wand-magic-sparkles"></i><h1>0</h1>This Month</div>
+        <div id="participants"><i class="fa-solid fa-users"></i><h1>0</h1>Participants</div>
+         </div>
+    
+         <div class="recentactivities">
+            <div style="font-size:25px;font-weight: bolder;">Recent activities</div>
+            <button>See all <i class="fa-solid fa-arrow-right"></i></button>
+         </div>
+
+         <div class="recenttab">
+            <div><i class="fa-solid fa-wrench"></i></div>
+            <div id="noactivities">No activities yet</div>
+            <div id="firsttinker">Log your first tinkering session to get started</div>
+            <button>Log your first activity</button>
+         </div>
+
+    </div>
+    </div>
+</body>
+</html>
