@@ -3,6 +3,9 @@ body{
     background-size: 24px 24px;
 }
 
+*{
+font-family: Fredoka, system-ui, sans-serif;
+}
 .page{
     display:flex;
 }
