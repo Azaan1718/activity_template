@@ -91,10 +91,7 @@ body{
     font-weight: bolder;
 }
 
-.logactivities{
-    display:flex;
-    gap: 20px;
-}
+
 
 #sidebutton1{
     display: flex;
@@ -111,7 +108,7 @@ body{
     background-color: orangered;
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:10px 20px ;
     display: flex;
     gap:8px;
     height:50px;
@@ -121,9 +118,10 @@ body{
     background-color: aqua;
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:10px 20px ;
     display: flex;
     gap:8px;
+    flex-wrap:nowrap;
     height:50px;
 }
 
@@ -133,14 +131,15 @@ body{
     display:flex;
     gap:30px;
     flex-wrap: wrap;
-    margin:50px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 #totalactivities{
     display: flex;
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:15px;
     border-radius: 8px;
     flex-direction: column;
     padding-left: 10px;
@@ -149,8 +148,8 @@ body{
     background-color: rgb(218, 188, 17);
     justify-content: flex-end;
     height:150px;
-    width:150px;
-        font-size: larger;
+    width:120px;
+    font-size: larger;
 
 }
 
@@ -159,7 +158,7 @@ body{
     background-color: aqua;
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:15px;
     border-radius: 8px;
     flex-direction: column;
     padding-left: 10px;
@@ -167,8 +166,8 @@ body{
     gap:5px;
     justify-content: flex-end;
     height:150px;
-    width:150px;
-        font-size: larger;
+    width:120px;
+    font-size: larger;
 
 }
 
@@ -177,7 +176,7 @@ body{
     background-color: rgb(18, 214, 152);
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:15px;
     border-radius: 8px;
     flex-direction: column;
     padding-left: 10px;
@@ -185,7 +184,7 @@ body{
     gap:5px;
     justify-content: flex-end;
     height:150px;
-    width:150px;
+    width:120px;
     font-size: larger;
 
 }
@@ -195,7 +194,7 @@ body{
     background-color: rgb(255, 0, 123);
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
-    padding:10px 50px 10px 50px;
+    padding:15px;
     border-radius: 8px;
     flex-direction: column;
     padding-left: 10px;
@@ -203,7 +202,7 @@ body{
     gap:5px;
     justify-content: flex-end;
     height:150px;
-    width:150px;
+    width:120px;
     font-size: larger;
 }
 
@@ -265,3 +264,9 @@ body{
 
 }
 
+
+
+.logactivities {
+    display: flex;
+    gap: 15px;
+}
