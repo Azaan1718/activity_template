@@ -285,11 +285,11 @@ body{
     margin-left:30px;
 }
 
-#sidebutton1 :hover {
+#sidebutton1:hover {
     background-color: rgb(221, 221, 16);
 }
 
-#sidebutton2 :hover {
+#sidebutton2:hover {
     background-color: rgb(221, 221, 16);
 }
 
