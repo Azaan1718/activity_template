@@ -3,6 +3,8 @@ body{
     background-size: 24px 24px;
 }
 
+
+
 .page{
     display:flex;
 }
@@ -127,85 +129,28 @@ body{
     border-radius: 8px;
 }
 
-
-
 .boxes{
-    display:flex;
-    gap:30px;
-    flex-wrap: wrap;
-    margin-top:50px;
-    margin-bottom:50px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    margin:25px;
 }
 
-#totalactivities{
-    display: flex;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
-    padding:15px;
-    border-radius: 8px;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    gap:5px;
-    background-color: #ffd166;
-    justify-content: flex-end;
-    height:150px;
-    width:120px;
-    font-size: larger;
 
-}
 
-#thisweek{
-    display: flex;
-    background-color: #4cb5f9;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
-    padding:15px;
-    border-radius: 8px;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    gap:5px;
-    justify-content: flex-end;
-    height:150px;
-    width:120px;
-    font-size: larger;
-
-}
-
-#thismonth{
-    display: flex;
-    background-color: #06d6a0;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
-    padding:15px;
-    border-radius: 8px;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    gap:5px;
-    justify-content: flex-end;
-    height:150px;
-    width:120px;
-    font-size: larger;
-
-}
-
+#totalactivities,
+#thisweek,
+#thismonth,
 #participants{
-    display: flex;
-    background-color: #ef476f;
+    height: 155px;
+    padding: 20px;
     border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
-    padding:15px;
     border-radius: 8px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    gap:5px;
     justify-content: flex-end;
-    height:150px;
-    width:120px;
-    font-size: larger;
+    box-sizing: border-box;
 }
 
 .recentactivities{
@@ -255,15 +200,23 @@ body{
 }
 
 .boxes i{
-    margin-left:20px;
-    border:2px solid black;
-    border-radius: 4px;
-    height:55px;
-    width:30px;
-    background-color: #ffffffb3;
-    text-align: center;
-    margin-top:20px;
+    width:36px;
+    height:36px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:2px solid black;
+    border-radius:4px;
+    background:#ffffffb3;
+
+    font-size:18px;
+}
+
+#totalactivities p{
+    white-space: nowrap;
+    margin:0px;
 }
 
 
@@ -295,8 +248,9 @@ body{
     background-color: rgb(221, 221, 16);
 }
 
-#totalativities{
+#totalactivities{
     transition:transform 0.3s ease,box-shadow 0.3s ease;
+    background-color: #ffd166;
 }
 
 #totalactivities:hover{
@@ -306,6 +260,7 @@ body{
 
 #thisweek{
     transition:transform 0.3s ease,box-shadow 0.3s ease;
+    background-color: #4cb5f9;
 }
 
 #thisweek:hover{
@@ -315,6 +270,7 @@ body{
 
 #thismonth{
     transition:transform 0.3s ease,box-shadow 0.3s ease;
+    background-color: #06d6a0;
 }
 
 #thismonth:hover{
@@ -324,6 +280,7 @@ body{
 
 #participants{
     transition:transform 0.3s ease,box-shadow 0.3s ease;
+    background-color: #ef476f;
 }
 
 #participants:hover{
@@ -357,4 +314,11 @@ body{
     transform: translateY(-2px) scale(1.01);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
+@media (max-width: 900px){
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
